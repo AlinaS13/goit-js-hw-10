@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
 }
+ul {
+  list-style: none;
+}
+h2 {
+  font-size: 40px;
+  margin: 0;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -17,4 +24,16 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+.country-item {
+  line-height: 1;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
