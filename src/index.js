@@ -3,7 +3,7 @@ import debounce from 'lodash.debounce';
 
 import { fetchCountries, countryList, countryInfo } from './fetchCountries';
 
-const DEBOUNCE_DELAY = 400;
+const DEBOUNCE_DELAY = 300;
 
 const input = document.getElementById('search-box');
 console.log(input);

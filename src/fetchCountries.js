@@ -28,7 +28,9 @@ function fetchCountries(name) {
       } else {
         const country = result.map(
           ({ name, capital, population, flag, languages }) =>
-            `<div class="wrap"><img src=${flag} alt="flag" width="50"/><h2>${name}</h2></div><p><strong>Capital:</strong> ${capital}</p><p><strong>Population:</strong> ${population}</p><p><strong>Languages:</strong> ${languages[0].name}</p>`
+            `<div class="wrap"><img src=${flag} alt="flag" width="50"/><h2>${name}</h2></div><p><strong>Capital:</strong> ${capital}</p><p><strong>Population:</strong> ${population}</p><p><strong>Languages:</strong> ${Object.value(
+              languages
+            )}</p>`
         );
         countryInfo.insertAdjacentHTML('beforeend', country.join(''));
       }
